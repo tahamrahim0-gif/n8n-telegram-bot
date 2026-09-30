@@ -1,9 +1,10 @@
-FROM docker.n8n.io/n8nio/n8n:latest
+FROM n8nio/n8n:latest
 
 USER root
-EXPOSE 10000
 
 ENV N8N_PORT=10000
 ENV N8N_ENFORCE_SETTINGS_FILE_PERMISSIONS=true
+
+EXPOSE 10000
 
 CMD ["n8n", "start"]
