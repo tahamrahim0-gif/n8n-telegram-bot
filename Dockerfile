@@ -1,10 +1,6 @@
 FROM n8nio/n8n:latest
 
-USER root
-
 ENV N8N_PORT=10000
 ENV N8N_ENFORCE_SETTINGS_FILE_PERMISSIONS=true
 
 EXPOSE 10000
-
-CMD ["n8n", "start"]
